@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gym Website</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        background-color: bisque;
+        border: 2px solid black;
+    }
+    body header{
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px;
+        padding: 0px;
+        /*url is a function which adds the image*/
+        background: url('img/5.jpg');
+        background-repeat: round;
+        color: white;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(54, 50, 50);
+    }
+
+    .container {
+        background: beige;
+        border: 4px solid black;
+        margin: 76px 36px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 9px auto;
+        font-size: 21px;
+        border-radius: 6px;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: black;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+
+    .navbar{
+            background-color: rgb(38, 36, 36);
+            border-radius: 0px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none; /*to remove bullets*/
+            margin: 13px 20px;
+        }
+        .navbar li a{
+            padding: 13px 27px;
+            text-decoration: none;
+            color: white;
+            margin: 50px;
+        }
+        .navbar li a:hover{
+            color: red;
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 19px;
+            width: 129px;
+        }
+        .left{
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 20px;
+        text-align: center;
+    }
+    .left img{
+        width: 32px;
+        filter: invert(100%);
+    }
+    .left div{
+        line-height: 0px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .image{
+        margin: 0px;
+        padding: 0px;
+        position: absolute; 
+    }
+    .colors{
+        background-color: rgb(215, 137, 81);
+        border: 2px solid black;
+    }
+    .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:grey;
+            min-width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            text-align: center;
+            display: block;
+        }
+        .change{
+            background-color: rgb(238, 140, 53);
+        }
+</style>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Personal Trainer</a>
+                        <a href="#">Yoga Space</a>
+                        <a href="#">Zumba</a>
+                    </div>
+                </li>
+
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+
+        <div class="left">
+            <img src="img/gym.png" alt="">
+            <div>FitTrack</div>
+        </div>
+        
+        <div class="container">
+            <h1>Begin your fitness journey with FitTrack</h1>
+            <form action="noaction.php"> <!--we don't have backend so form will not be submitted -->
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your age">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your gender">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your locality">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </header>
+    <div >
+        <center class="colors"><h1>Welcome to FitTrack</h1></center>
+        
+        <center><p>Welcome to the epitome of strength and determination, where iron meets sweat and dreams become realities. Step into a world where passion for fitness ignites, and unleash the power within you. Our gym is not just a place to work out; it's your sanctuary of transformation. With state-of-the-art equipment, dynamic classes, and a community that thrives on support, we are here to sculpt your body and elevate your spirit. Embrace the journey of becoming the best version of yourself, because at our gym, greatness is forged, one rep at a time. Are you ready to conquer your goals? Let's start this incredible fitness adventure together!</p></center>
+
+        <center><img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" width="280" height="280">
+
+        <img src="https://static.toiimg.com/photo/75126749.cms" width="280" height="280" >
+
+        <img src="https://img.freepik.com/premium-photo/sport-training-fitness-lifestyle-people-concept-young-woman-with-personal-trainer-flexing-back-abdominal-muscles-bench-gym-high-quality-photo_96727-1812.jpg?w=360" width="280" height="280">
+
+        <img src="https://media.istockphoto.com/id/619088796/photo/fitness-girl-lifting-dumbbell-in-the-morning.jpg?s=612x612&w=0&k=20&c=m8gUYPVV1ZfWpfjrKjzWn-a8DVHnw1hGp-rjh6c40f0=" width="280" height="280">
+
+        <img src="https://www.thegym.in/img/the-gym-kikboxing.jpg" width="280" height="280"></center>
+
+        <center class="colors"><h1>Why join us ?</h1></center>
+        <center class="change"><h2>Personal Trainer</h2> </center>
+        <center><img src="https://images.pexels.com/photos/2204196/pexels-photo-2204196.jpeg?auto=compress&cs=tinysrgb&w=600" width="480" height="280"> </center>
+
+        <center><p>Our team is dedicated to providing our members with the utmost care and support on their fitness journey. With the addition of a personal trainer, you can expect a tailored and personalized approach to achieving your health and wellness goals. Our trainers are highly skilled professionals, equipped with a wealth of knowledge, experience, and passion for fitness. They will work closely with you to design a customized workout plan, provide guidance on proper form and technique, and offer valuable insights to optimize your fitness regimen. Whether you are a beginner looking for guidance or an experienced individual seeking to take your fitness to new heights, our personal trainers are here to inspire and motivate you every step of the way. Together, we can transform your aspirations into tangible results and help you unlock your full potential. Join us at our gym and experience the incredible benefits of having a personal trainer by your side. Let's embark on this fitness journey together and make your goals a reality!</p></center>
+
+        <center class="change"><h2>Yoga Space</h2> </center>
+        <center><img src="https://images.pexels.com/photos/3984359/pexels-photo-3984359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="480" height="280"></center>
+
+        <center><p>At our gym, we are dedicated to providing an enhanced fitness experience to our valued members. As part of our commitment to holistic well-being, we have thoughtfully incorporated an additional yoga space within our facility. This specially designed area is intended to offer a serene and tranquil environment where individuals can engage in yoga practices that promote physical strength, flexibility, and mental clarity. Whether you are a seasoned yogi or a beginner looking to explore the incredible benefits of yoga, our dedicated space is here to support your journey towards inner balance and harmony. Join us in this invigorating space as we strive to help you achieve your fitness goals and cultivate a deeper connection between mind, body, and soul.</p></center>
+
+        <center class="change"><h2>And much more...</h2></center>
+        <center><img src="https://images.pexels.com/photos/3984367/pexels-photo-3984367.jpeg?auto=compress&cs=tinysrgb&w=600"width="350" height="250">
+        
+        <img src="https://www.thegym.in/img/the-gym-aerobic.jpg" width="350" height="250">
+        
+        <img src="https://www.thegym.in/img/the-gym-kikboxing.jpg" width="350" height="250"></center>
+    </div>
+
+    <center><div>
+        <h3>We hope you liked our Gym!!</h3>
+        <center><input type="text" name="" placeholder="Share your experience with us" size="50px"></center><br>
+        <button class="btn">Submit Feedback</button>
+    </div></center>
+
+    <footer>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#">Social Media Handles</a>
+                    <div class="icons" > 
+                        <a href="https://google.com"target = "_blank"><img src="https://freepngimg.com/convert-png/66912-logo-now-google-plus-search-free-transparent-image-hd" height="40" width="40"></a>
+                        
+                        <a href="https://youtube.com"target = "_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/2048px-YouTube_social_white_square_%282017%29.svg.png"height="40" width="40"></a>
+
+                        <a href="https://google.com"target = "_blank"><img src="https://icon-library.com/images/instagram-small-icon/instagram-small-icon-12.jpg"height="40" width="40" ></a>
+                    </div>
+                </li>
+                <li><a href="#">Contact Us : 5689522659</a></li>
+                <li><a href="#">Address: Paschim Vihar, New Delhi </a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+
+</html>
